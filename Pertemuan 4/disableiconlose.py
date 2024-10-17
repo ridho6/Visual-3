@@ -21,7 +21,7 @@ class MyWindow(QMainWindow):
     self.setWindowFlag(QtCore.Qt.WindowMinimizeButtonHint, False)
     self.setWindowFlag(QtCore.Qt.WindowCloseButtonHint, False)
 
-app QApplication([])
+app = QApplication([])
 window = MyWindow()
 window.show()
 app.exec_()
