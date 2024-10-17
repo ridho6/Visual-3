@@ -2,8 +2,8 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QPushButton, QLa
 from PyQt5 import QtCore
 
 class MyWindow(QMainWindow):
-  def _init__(self):
-    super()._init__()
+  def __init__(self):
+    super().__init__()
     self.label = QLabel(self)
     self.label.setText("Label1")
     self.label.move(200, 0)
@@ -18,9 +18,9 @@ class MyWindow(QMainWindow):
     self.move(cwa.topLeft())
     self.setFixedSize (500,500) # agar tidak bisa di-resize! icon maximize juga akan otomatis hilang
     #self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
-    self.setWindowFlag(QtCore.Qt.WindowMinimizeButtonHint, False)
+    self.setWindowFlag(QtCore.Qt.WindowMinimizeButtonHint,False)
 
 app = QApplication([])
-window MyWindow()
+window = MyWindow()
 window.show()
 app.exec_()

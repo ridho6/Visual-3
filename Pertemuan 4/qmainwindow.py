@@ -1,4 +1,4 @@
-# ======= Menggunakan QMainWindow
+# ======= Menggunakan QMainWindow=======================================
 
 from PyQt5.QtWidgets import QApplication, QPushButton, QLabel, QMainWindow
 

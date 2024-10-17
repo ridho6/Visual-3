@@ -2,8 +2,8 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QPushButton, QLa
 from PyQt5 import QtCore
 
 class MyWindow (QMainWindow):
-  def _init__(self):
-    super()._init__()
+  def __init__(self):
+    super().__init__()
     self.label = QLabel(self)
     self.label.setText("Label1")
     self.label.move(200, 0)

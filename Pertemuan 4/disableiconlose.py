@@ -3,7 +3,7 @@ from PyQt5 import QtCore
 
 class MyWindow(QMainWindow):
   def __init__(self):
-    super()._init__()
+    super().__init__()
     self.label = QLabel(self)
     self.label.setText("Label1")
     self.label.move(200, 0)

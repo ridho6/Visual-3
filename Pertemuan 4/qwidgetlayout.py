@@ -1,4 +1,4 @@
-from PyqQt5.QtWidgets import QMainWindow, QWidget, QApplication, QPushButton, QLabel, QVBoxLayout
+from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QPushButton, QLabel, QVBoxLayout
 
 class MyWindow(QWidget):
   def __init__(self):
